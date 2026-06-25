@@ -1,0 +1,26 @@
+﻿[
+    {
+        "file":  "review-avatars/reviewer-1.jpg",
+        "name":  "Chaithra Kini",
+        "gender":  "female",
+        "source":  "https://randomuser.me/api/portraits/women/42.jpg"
+    },
+    {
+        "file":  "review-avatars/reviewer-2.jpg",
+        "name":  "Neha Singh",
+        "gender":  "female",
+        "source":  "https://randomuser.me/api/portraits/women/55.jpg"
+    },
+    {
+        "file":  "review-avatars/reviewer-3.jpg",
+        "name":  "Ajinkya Saldanha",
+        "gender":  "male",
+        "source":  "https://randomuser.me/api/portraits/men/38.jpg"
+    },
+    {
+        "file":  "review-avatars/reviewer-4.jpg",
+        "name":  "Guneet Adiga",
+        "gender":  "male",
+        "source":  "https://randomuser.me/api/portraits/men/8.jpg"
+    }
+]
