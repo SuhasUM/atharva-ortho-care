@@ -1,4 +1,4 @@
-﻿const SITE = {
+const SITE = {
   clinic: 'Atharva Ortho Care',
   doctor: 'Dr. Ajeya Deshpande',
   title: 'Consultant Orthopaedic Surgeon',
@@ -82,6 +82,48 @@ const logoImage = 'logo.png';
 
 function logoMark() {
   return `<img class="logo-mark" src="${logoImage}" alt="Atharva Ortho Care logo" loading="eager">`;
+}
+
+function boneLoader() {
+  return `
+    <div class="bone-loader" id="bone-loader" role="status" aria-live="polite" aria-label="Loading Atharva Ortho Care">
+      <div class="loader-panel">
+        <div class="loader-orbit" aria-hidden="true">
+          <svg class="loader-bone loader-bone-version bone-version-1" viewBox="0 0 260 120" fill="none">
+            <path d="M49 42c-9-10-25-9-33 3-8 11-4 28 9 33-1 14 10 25 24 24 11-1 19-8 22-17l118-29c9 9 23 10 33 3 12-8 15-24 7-35 8-11 5-27-7-34-13-8-29-3-35 11-13-2-25 5-30 17L43 44Z" />
+            <path d="M73 76l108-27" />
+          </svg>
+          <svg class="loader-bone loader-bone-version bone-version-2" viewBox="0 0 260 120" fill="none">
+            <path d="M49 42c-9-10-25-9-33 3-8 11-4 28 9 33-1 14 10 25 24 24 11-1 19-8 22-17l118-29c9 9 23 10 33 3 12-8 15-24 7-35 8-11 5-27-7-34-13-8-29-3-35 11-13-2-25 5-30 17L43 44Z" />
+            <path d="M73 76l108-27" />
+            <path class="loader-plate" d="M95 71l86-21" />
+            <circle class="loader-screw" cx="111" cy="67" r="4" />
+            <circle class="loader-screw" cx="137" cy="60" r="4" />
+            <circle class="loader-screw" cx="163" cy="54" r="4" />
+          </svg>
+          <svg class="loader-bone loader-bone-version bone-version-3" viewBox="0 0 260 140" fill="none">
+            <path d="M109 18c-11 7-14 20-8 31l19 34c7 12 4 27-7 35l-30 23c-12 9-30 4-35-10-15 4-30-6-31-22-1-16 13-29 28-26 5-13 21-19 34-12l28-16c-10-14-6-33 9-42 14-9 33-4 42 10 14-5 31 4 34 20 3 17-10 32-26 33-3 13-16 23-30 21l-18 11c5 18-2 37-18 48l-31 22" />
+            <path d="M126 59l24 42" />
+          </svg>
+          <svg class="loader-bone loader-bone-version bone-version-4" viewBox="0 0 260 140" fill="none">
+            <path d="M53 101c-12 9-30 4-35-10-15 4-30-6-31-22-1-16 13-29 28-26 5-13 21-19 34-12l124-17c9-12 27-14 39-4 11 9 13 25 5 36 11 9 12 26 2 37-10 11-28 11-38 0L58 103Z" transform="translate(20 12)" />
+            <path class="loader-plate" d="M91 78l95-13" />
+            <circle class="loader-screw" cx="108" cy="76" r="4" />
+            <circle class="loader-screw" cx="132" cy="73" r="4" />
+            <circle class="loader-screw" cx="156" cy="70" r="4" />
+            <circle class="loader-screw" cx="180" cy="67" r="4" />
+            <path class="loader-fracture" d="M139 44l-15 25 20 19-18 26" />
+          </svg>
+          <div class="loader-joint"></div>
+        </div>
+        <div class="loader-copy">
+          <strong>Atharva Ortho Care</strong>
+          <span>Preparing bone & joint care experience</span>
+        </div>
+        <div class="loader-progress" aria-hidden="true"><span></span></div>
+      </div>
+    </div>
+  `;
 }
 
 function addressLine() {
@@ -937,9 +979,23 @@ function render() {
     appointment: `${appointmentForm()}${locationSection()}`,
   }[page] || hero();
 
-  app.innerHTML = `${header(page)}${skeletalBackdrop()}<main>${body}</main>${floatingWa()}${mobileBar()}${footer()}`;
+  app.innerHTML = `${boneLoader()}${header(page)}${skeletalBackdrop()}<main>${body}</main>${floatingWa()}${mobileBar()}${footer()}`;
   document.querySelectorAll('[data-year]').forEach((node) => { node.textContent = String(new Date().getFullYear()); });
+  initBoneLoader();
   if (page === 'appointment') initAppointmentForm();
+}
+
+function initBoneLoader() {
+  const loader = document.getElementById('bone-loader');
+  if (!loader) return;
+
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const delay = reducedMotion ? 650 : 3000;
+
+  window.setTimeout(() => {
+    loader.classList.add('is-hidden');
+    window.setTimeout(() => loader.remove(), 520);
+  }, delay);
 }
 
 function homeContactPreview() {
@@ -1061,4 +1117,3 @@ function initAppointmentForm() {
 }
 
 window.addEventListener('DOMContentLoaded', render);
-
