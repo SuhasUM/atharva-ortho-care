@@ -979,9 +979,23 @@ function render() {
     appointment: `${appointmentForm()}${locationSection()}`,
   }[page] || hero();
 
-  app.innerHTML = `${boneLoader()}${header(page)}${skeletalBackdrop()}<main>${body}</main>${floatingWa()}${mobileBar()}${footer()}`;
-  document.querySelectorAll('[data-year]').forEach((node) => { node.textContent = String(new Date().getFullYear()); });
-  initBoneLoader();
+  const navEntry = performance.getEntriesByType('navigation')[0];
+  const isReload = navEntry?.type === 'reload';
+
+  if (isReload) {
+    sessionStorage.removeItem('atharvaLoaderShown');
+  }
+
+  const shouldShowLoader = page === 'home' && sessionStorage.getItem('atharvaLoaderShown') !== 'true';
+  const loaderMarkup = shouldShowLoader ? boneLoader() : '';
+
+  app.innerHTML = `${loaderMarkup}${header(page)}${skeletalBackdrop()}<main>${body}</main>${floatingWa()}${mobileBar()}${footer()}`;
+
+  document.querySelectorAll('[data-year]').forEach((node) => {
+    node.textContent = String(new Date().getFullYear());
+  });
+
+  if (shouldShowLoader) initBoneLoader();
   if (page === 'appointment') initAppointmentForm();
 }
 
@@ -989,15 +1003,16 @@ function initBoneLoader() {
   const loader = document.getElementById('bone-loader');
   if (!loader) return;
 
+  sessionStorage.setItem('atharvaLoaderShown', 'true');
+
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const delay = reducedMotion ? 650 : 3000;
+  const delay = reducedMotion ? 650 : 2800;
 
   window.setTimeout(() => {
     loader.classList.add('is-hidden');
     window.setTimeout(() => loader.remove(), 520);
   }, delay);
 }
-
 function homeContactPreview() {
   return `
     <section class="section fade-in delay-3">
