@@ -36,7 +36,8 @@ const SITE = {
   visitingConsultant: [
     'Manipal Clinic, Begur',
     'Manipal Hospital, Jayanagar',
-    'Sri Krishna Sevashrama Hospital, Jayanagar'
+    'Sri Krishna Sevashrama Hospital, Jayanagar',
+    'Baines International Healthcare, J.P Nagar'
   ],
   registrations: [
     'KMC (Karnataka Medical Council)',
