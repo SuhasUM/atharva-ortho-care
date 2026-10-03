@@ -34,10 +34,11 @@ const SITE = {
     'Master in Hospital Administration and Hospital Management - DY Patil University, Pune, India.'
   ],
   visitingConsultant: [
-    'Manipal Clinic, Begur',
-    'Manipal Hospital, Jayanagar',
-    'Sri Krishna Sevashrama Hospital, Jayanagar',
-    'Baines International Healthcare, J.P Nagar'
+    'Manipal Hospital, Bengaluru',
+    'Sri Krishna Sevashrama Hospital, Bengaluru',
+    'Baines International Healthcare, Bengaluru',
+    'Bharathi Multispeciality Hospital, Bengaluru',
+    'Curemax Hospital, Bengaluru'
   ],
   registrations: [
     'KMC (Karnataka Medical Council)',
