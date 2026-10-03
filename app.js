@@ -46,10 +46,10 @@ const SITE = {
     'IAS (Indian Arthroscopy Society)'
   ],
   services: [
-    { key: 'knee-procedures', code: 'KP', title: 'Knee Procedures', image: 'service-images/knee-replacement.jpg', desc: 'From robotic knee replacement to ligament reconstruction, this pathway focuses on pain relief, alignment, stability, and confident return to movement.', details: ['● Total Knee Replacement Surgery (Robotic)', '● Minimally Invasive Knee Joint Replacement', '● Unicondylar Knee Replacement', '● Revision Total Knee Replacement Surgery', '● Knee Arthroscopy', '● ACL Reconstruction', '● Meniscal Surgery', '● PCL Reconstruction Surgery', '● MCL Reconstruction', '● Removal of Loose Bodies'] },
-    { key: 'hip-procedures', code: 'HP', title: 'Hip Procedures', image: 'service-images/hip-replacement.jpg', desc: 'A complete hip-care track for fractures, arthritis, complex reconstruction, labral injury, cartilage repair, and image-guided recovery planning.', details: ['● Hip Fracture Surgery', '● Total Hip Replacement Surgery', '● Minimally Invasive Total Hip Replacement (Robotic)', '● Revision Hip Surgery', '● Hip Hemiarthroplasty', '● Complex Hip Reconstruction Surgery', '● Hip Arthroscopy', '● Hip Cartilage Repair', '● Hip Labral Repair', '● Ultrasound-Guided Hip Injections', '● Complex Pelvi Acetabular Surgery'] },
-    { key: 'shoulder-procedures', code: 'SP', title: 'Shoulder Procedures', image: 'service-images/shoulder-conditions.jpg', desc: 'Precision shoulder care for fracture fixation, cuff repair, instability, labral tears, AC joint injury, and replacement options when needed.', details: ['● Shoulder Fracture Fixation', '● Shoulder Arthroscopic Rotator Cuff Repair', '● Arthroscopic Bankart Repair', '● SLAP Repair', '● Reverse Shoulder Replacement', '● Partial Shoulder Replacement', '● Shoulder Arthroscopic AC Joint Repair'] },
-    { key: 'shoulder-fixation', code: 'SF', title: 'Shoulder Fixation', image: 'service-images/fracture-management.jpg', desc: 'Advanced fixation and stabilization support for upper-limb, spine, pelvis, hip, knee, ankle, and foot fractures with careful healing follow-up.', details: ['● Clavicle fracture fixation', '● Proximal Humerus fracture fixation', '● Elbow fracture fixation', '● Forearm and wrist fracture fixation', '● Hand fracture fixation', '● Spine fracture stabilization', '● Proximal femur (trochanter and sub trochanter) fracture fixation', '● Pelvis fracture stabilization', '● Complex Distal femur and proximal tibia fracture fixation', '● Tibia and fibula fracture fixation', '● Complex Ankle fracture fixation', '● Foot fracture fixation'] }
+    { key: 'knee-procedures', code: 'KP', title: 'Knee Procedures', image: 'service-images/knee-replacement.jpg', desc: 'From robotic knee replacement to ligament reconstruction, this pathway focuses on pain relief, alignment, stability, and confident return to movement.', details: ['Total Knee Replacement Surgery (Robotic)', 'Minimally Invasive Knee Joint Replacement', 'Unicondylar Knee Replacement', 'Revision Total Knee Replacement Surgery', 'Knee Arthroscopy', 'ACL Reconstruction', 'Meniscal Surgery', 'PCL Reconstruction Surgery', 'MCL Reconstruction', 'Removal of Loose Bodies'] },
+    { key: 'hip-procedures', code: 'HP', title: 'Hip Procedures', image: 'service-images/hip-replacement.jpg', desc: 'A complete hip-care track for fractures, arthritis, complex reconstruction, labral injury, cartilage repair, and image-guided recovery planning.', details: ['Hip Fracture Surgery', 'Total Hip Replacement Surgery', 'Minimally Invasive Total Hip Replacement (Robotic)', 'Revision Hip Surgery', 'Hip Hemiarthroplasty', 'Complex Hip Reconstruction Surgery', 'Hip Arthroscopy', 'Hip Cartilage Repair', 'Hip Labral Repair', 'Ultrasound-Guided Hip Injections', 'Complex Pelvi Acetabular Surgery'] },
+    { key: 'shoulder-procedures', code: 'SP', title: 'Shoulder Procedures', image: 'service-images/shoulder-conditions.jpg', desc: 'Precision shoulder care for fracture fixation, cuff repair, instability, labral tears, AC joint injury, and replacement options when needed.', details: ['Shoulder Fracture Fixation', 'Shoulder Arthroscopic Rotator Cuff Repair', 'Arthroscopic Bankart Repair', 'SLAP Repair', 'Reverse Shoulder Replacement', 'Partial Shoulder Replacement', 'Shoulder Arthroscopic AC Joint Repair'] },
+    { key: 'shoulder-fixation', code: 'SF', title: 'Shoulder Fixation', image: 'service-images/fracture-management.jpg', desc: 'Advanced fixation and stabilization support for upper-limb, spine, pelvis, hip, knee, ankle, and foot fractures with careful healing follow-up.', details: ['Clavicle fracture fixation', 'Proximal Humerus fracture fixation', 'Elbow fracture fixation', 'Forearm and wrist fracture fixation', 'Hand fracture fixation', 'Spine fracture stabilization', 'Proximal femur (trochanter and sub trochanter) fracture fixation', 'Pelvis fracture stabilization', 'Complex Distal femur and proximal tibia fracture fixation', 'Tibia and fibula fracture fixation', 'Complex Ankle fracture fixation', 'Foot fracture fixation'] }
   ],
   reviews: [
     { name: 'Priya S.', rating: '5.0', photo: 'review-avatars/reviewer-1.jpg', quote: 'The doctor explained my knee problem very clearly and gave a practical treatment plan. The clinic visit felt organized, calm, and reassuring.' },
@@ -63,11 +63,113 @@ const SITE = {
     { title: 'Operation Theatre Care', note: 'Orthopaedic surgery visuals showing focused procedural care and operating-room teamwork.', images: ['gallery/surgery-team.jpg', 'gallery/surgery-closeup.jpg'], blurAfter: 0 },
     { title: 'Facilities Available', note: 'On-site X-ray facility support for orthopaedic evaluation and follow-up care.', images: ['doctor-media/facility-xray.jpg'] },
     { title: 'Trauma & Recovery Education', note: 'Clinic display focused on trauma recovery, rehabilitation, and patient education.', images: ['gallery/clinic-photo-4.jpg'] },
-    { title: 'Awards & Recognition', note: 'Recognition shelf highlighting the doctor and clinic environment.', images: ['gallery/clinic-photo-6.jpg'] },
+    
     { title: 'Atharva Clinic Experience', note: 'A combined view of reception, consultation, clinical care, and bone-focused orthopaedic work.', images: ['gallery/clinic-photo-5.jpg', 'gallery/clinic-photo-1.jpg', 'gallery/clinic-photo-2.jpg'] },
     { title: 'Orthopaedic Awareness Video', note: 'A useful patient education video connected to bone, joint, and recovery awareness.', youtube: 'https://www.youtube.com/embed/_hGhFaFY7XA' },
     { title: 'Clinic Video Walkthrough', note: 'A short clinic media update from the doctor and care environment.', video: 'doctor-media/doctor-video-1.mp4' },
     { title: 'Doctor Media Update', note: 'A second patient-facing video highlight for the Atharva Ortho Care gallery.', video: 'doctor-media/doctor-video-2.mp4' }
+  ],
+  blogs: [
+    {
+      slug: 'osteoarthritis-what-you-need-to-know',
+      title: 'Osteoarthritis: What You Need to Know',
+      category: 'Joint Health',
+      date: 'July 27, 2023',
+      readTime: '5 min read',
+      image: 'service-images/joint-care.jpg',
+      excerpt: 'Osteoarthritis is not simply a consequence of growing older. Understanding what changes inside a joint can help you protect movement, manage symptoms, and make informed decisions about care.',
+      source: 'https://www.manipalhospitals.com/clinics-begur/blog/osteoarthritis-what-you-need-to-know/',
+      introduction: 'Every step, every turn, and every movement we take depends on joints working quietly beneath us. When the smooth cartilage that cushions a joint gradually changes, movement can become painful and everyday activities may start to feel harder. This is where understanding osteoarthritis becomes important.',
+      sections: [
+        { heading: 'What happens inside an arthritic joint?', paragraphs: [
+          'Healthy cartilage creates a remarkably smooth surface between the bones of a joint. It helps absorb load, reduces friction, and allows the joint to move with ease.',
+          'With osteoarthritis, this protective surface gradually becomes thinner and less resilient. Changes in the surrounding tissues can add to pain, stiffness, and reduced movement.'
+        ]},
+        { heading: 'Why does osteoarthritis develop?', paragraphs: [
+          'Age is a familiar risk factor, but osteoarthritis is not simply an unavoidable part of ageing. Previous injuries, repeated stress, excess body weight, altered joint mechanics, and individual health factors can all influence how a joint changes over time.'
+        ]},
+        { heading: 'Symptoms worth paying attention to', bullets: [
+          'Pain during or after activity', 'Stiffness after sitting or resting', 'Reduced flexibility or range of movement', 'Clicking, grinding, or creaking sensations', 'Difficulty with stairs, squatting, or longer walks', 'Symptoms that increasingly interfere with everyday life'
+        ]},
+        { heading: 'How can osteoarthritis be managed?', paragraphs: [
+          'The right treatment depends on the joint involved, the severity of degeneration, the person’s lifestyle, and how much the symptoms affect daily life.',
+          'Management may include appropriate exercise and physiotherapy, weight management, activity modification, medicines, or injections when clinically suitable. When degeneration becomes advanced and symptoms remain limiting, surgical options may be discussed.'
+        ]},
+        { heading: 'Protecting your joints for the long term', paragraphs: [
+          'Movement remains one of the most valuable tools for joint health. Building strength around a joint, maintaining a healthy body weight, choosing suitable activities, and addressing injuries early can all support long-term mobility.'
+        ]}
+      ],
+      takeaways: ['Osteoarthritis is more than “normal ageing”.', 'Persistent pain and stiffness deserve proper assessment.', 'Strength, movement, and healthy weight can support joint health.', 'Treatment should be tailored to the individual and the stage of disease.']
+    },
+    {
+      slug: 'ankle-sprain-warning-signs',
+      title: 'What Are the Warning Signs of Ankle Sprains?',
+      category: 'Sports & Trauma',
+      date: 'August 9, 2023',
+      readTime: '5 min read',
+      image: 'service-images/sports-injuries.jpg',
+      excerpt: 'An ankle sprain can look deceptively simple. Knowing the warning signs, understanding severity, and recognising when professional assessment is needed can make recovery safer.',
+      source: 'https://www.manipalhospitals.com/clinics-begur/blog/what-are-the-warning-signs-of-ankle-sprains/',
+      introduction: 'One awkward landing is all it takes. An ankle can roll while running, twist on an uneven surface, or buckle during sport. Sometimes the injury settles quickly; at other times, a seemingly minor sprain can leave behind pain or instability. Knowing what to look for matters.',
+      sections: [
+        { heading: 'How does an ankle sprain happen?', paragraphs: [
+          'An ankle sprain occurs when the supporting ligaments are stretched beyond their normal range or torn. Rolling the ankle, landing awkwardly, falling, or changing direction suddenly during sport can place a large force on these structures.'
+        ]},
+        { heading: 'Who is more likely to experience one?', bullets: [
+          'People playing running or jumping sports', 'Anyone walking or exercising on uneven surfaces', 'People with a previous ankle sprain', 'Individuals with reduced ankle strength, balance, or flexibility', 'Anyone returning to sport before an earlier injury has fully recovered'
+        ]},
+        { heading: 'Warning signs to watch for', bullets: [
+          'Pain around the ankle after the injury', 'Visible swelling or bruising', 'Difficulty putting weight through the foot', 'Restricted ankle movement', 'Tenderness over the injured area', 'A feeling that the ankle is weak or giving way'
+        ]},
+        { heading: 'Not every sprain is the same', paragraphs: [
+          'A mild sprain may involve ligament stretching and relatively limited damage. A more significant injury can involve a partial tear, while a severe sprain may completely disrupt a ligament and cause marked swelling, bruising, pain, and instability.',
+          'The appearance of an ankle alone cannot reliably determine the exact severity. A clinical assessment is especially important when weight-bearing is difficult or a fracture is a concern.'
+        ]},
+        { heading: 'Why timely assessment matters', paragraphs: [
+          'When an ankle injury is not rehabilitated properly, some people can develop persistent stiffness, pain, or instability. Repeated episodes of the ankle giving way may increase the chance of future injury.',
+          'The appropriate plan for protection, weight-bearing, rehabilitation, and return to sport depends on the injury and should be guided by a qualified clinician.'
+        ]},
+        { heading: 'Building a stronger return', bullets: [
+          'Warm up before sport and exercise', 'Strengthen the muscles around the ankle', 'Work on balance and proprioception', 'Use suitable footwear for the activity', 'Progress back to sport gradually after an injury', 'Do not ignore persistent swelling, pain, or instability'
+        ]}
+      ],
+      takeaways: ['Pain and swelling are not the only signs of an ankle sprain.', 'Difficulty bearing weight warrants careful assessment.', 'Rehabilitation is important for reducing recurrent instability.', 'A safe return to sport should be gradual and symptom-guided.']
+    },
+    {
+      slug: 'knee-pain-warning-signs',
+      title: "Knee Pain Warning Signs You Shouldn't Ignore",
+      category: 'Knee Health',
+      date: 'July 21, 2025',
+      readTime: '6 min read',
+      image: 'service-images/knee-replacement.jpg',
+      excerpt: 'Knee pain can come from many different structures. Recognising persistent pain, swelling, instability, or locking early can help you seek the right care before the problem limits your everyday movement.',
+      source: 'https://www.manipalhospitals.com/jayanagar/blog/knee-pain-warning-signs-treatment/',
+      introduction: 'Your knees carry you through thousands of steps every day. So when pain begins to interfere with walking, climbing stairs, exercising, or even getting up from a chair, it deserves attention. Knee pain is a symptom—not a diagnosis—and its cause can range from an injury to gradual joint degeneration.',
+      sections: [
+        { heading: 'Why can the knee become painful?', paragraphs: [
+          'The knee is a complex weight-bearing joint involving bones, cartilage, menisci, ligaments, tendons, and surrounding soft tissues. An injury or gradual change in any of these structures can alter how the joint moves and produce pain.',
+          'Common causes include osteoarthritis, ligament injuries, meniscal problems, sports injuries, overuse, inflammation, and fractures.'
+        ]},
+        { heading: 'Warning signs you should not brush aside', bullets: [
+          'Pain that keeps returning or continues despite rest', 'Swelling that persists or repeatedly comes back', 'The knee giving way or feeling unstable', 'Locking or difficulty fully bending or straightening the knee', 'Pain that makes ordinary walking or stairs difficult', 'Warmth, redness, or fever accompanying knee symptoms'
+        ]},
+        { heading: 'When should you see an orthopaedic specialist?', paragraphs: [
+          'If knee pain is persistent, progressively worsening, or changing the way you walk or live, an assessment can help identify what is actually happening inside the joint. The same symptom can have very different causes, so treatment should follow a diagnosis rather than guesswork.'
+        ]},
+        { heading: 'How is the cause identified?', paragraphs: [
+          'Evaluation usually begins with a detailed history and physical examination. Depending on the suspected condition, imaging such as an X-ray, ultrasound, or MRI may be recommended.',
+          'The goal is not simply to find a picture that explains the pain, but to connect the clinical findings with the patient’s symptoms and functional needs.'
+        ]},
+        { heading: 'Treatment is not one-size-fits-all', paragraphs: [
+          'Depending on the diagnosis and severity, care may involve activity modification, physiotherapy, strengthening, medication, injections, or surgery. Procedures such as arthroscopy or joint replacement may be considered for selected conditions when clinically appropriate.',
+          'The most useful treatment plan is one that matches the actual cause of pain, the person’s activity level, and their recovery goals.'
+        ]},
+        { heading: 'The message is simple: listen to your knees', paragraphs: [
+          'Knee pain should not automatically be dismissed as a normal part of ageing. If symptoms persist, interfere with movement, or repeatedly return, getting the right diagnosis can be the first step towards protecting mobility and staying active.'
+        ]}
+      ],
+      takeaways: ['Persistent knee pain is worth investigating.', 'Locking, instability, or recurring swelling should not be ignored.', 'Diagnosis combines examination, history, and imaging when needed.', 'Treatment should be personalised to the underlying condition and the patient’s goals.']
+    }
   ]
 };
 
@@ -78,7 +180,7 @@ const whatsappUrl = `https://wa.me/${SITE.whatsapp.replace(/\D/g, '')}?text=${en
 const reviewUrl = 'https://www.google.com/search?q=Atharva+Ortho+Care+Dr.+Ajeya+Deshpande+reviews';
 const leaveReviewUrl = 'https://www.google.com/search?q=leave+a+review+Atharva+Ortho+Care';
 const heroImage = 'IMG_0210.JPG.jpeg';
-const doctorImages = [heroImage, 'doctor-media/doctor-photo-2.jpg', 'doctor-media/doctor-photo-3.jpg'];
+const doctorImages = [heroImage, 'doctor-media/doctor-photo-2.jpg', 'doctor-media/doctor-photo-3.jpg', 'doctor-media/doctor-portrait.jpg', 'doctor-media/doctor-shoulder-explanation.jpg'];
 const logoImage = 'logo.png';
 
 function logoMark() {
@@ -147,11 +249,13 @@ function contactCards(extraClass = '') {
 }
 
 function doctorPhotoSlider(className = '') {
-  return `
-    <div class="doctor-slider ${className}" aria-label="Dr. Ajeya Deshpande photo slider">
-      ${doctorImages.map((image, index) => `<img src="${image}" alt="Dr. Ajeya Deshpande photo ${index + 1}" loading="${index === 0 ? 'eager' : 'lazy'}">`).join('')}
-    </div>
-  `;
+  if (className.includes('about')) {
+    return `<div class="doctor-slider doctor-feature ${className}"><img src="${heroImage}" width="4000" height="6000" alt="Dr. Ajeya Deshpande wearing his Atharva Ortho Care white coat" loading="eager"></div>`;
+  }
+  const descriptions = ['Dr. Ajeya Deshpande in his Atharva Ortho Care white coat', 'Dr. Ajeya Deshpande in the operating theatre', 'Dr. Ajeya Deshpande at Atharva Ortho Care', 'Portrait of Dr. Ajeya Deshpande at the clinic', 'Dr. Ajeya Deshpande explaining a shoulder model'];
+  return `<div class="doctor-slider doctor-carousel ${className}" role="region" aria-label="Doctor photographs" aria-roledescription="carousel">
+    <div class="doctor-slides">${doctorImages.map((src, i) => `<img class="doctor-slide${i === 0 ? ' is-active' : ''}" src="${src}" alt="${descriptions[i]}" aria-hidden="${i !== 0}" loading="${i === 0 && className.includes('hero') ? 'eager' : 'lazy'}" decoding="async">`).join('')}</div>
+  </div>`;
 }
 
 function doctorMiniature() {
@@ -308,19 +412,20 @@ function nav(page) {
     ['home', 'Home', 'index.html'],
     ['about', 'About Doctor', 'about.html'],
     ['specialities', 'Specialities', 'specialities.html'],
+    ['blogs', 'Blogs', 'blogs.html'],
     ['reviews', 'Patient Reviews', 'reviews.html'],
     ['gallery', 'Media & Gallery', 'gallery.html'],
     ['contact', 'Contact', 'contact.html'],
     ['appointment', 'Book Appointment', 'appointment.html']
   ];
-  return items.map(([key, label, href]) => `<a class="nav-link" href="${href}" ${page === key ? 'aria-current="page"' : ''}>${label}</a>`).join('');
+  return items.map(([key, label, href]) => `<a class="nav-link${key === 'appointment' ? ' nav-appointment' : ''}" href="${href}" ${page === key ? 'aria-current="page"' : ''}>${label}</a>`).join('');
 }
 
 function header(page) {
   return `
-    <header class="sticky top-0 z-50 border-b border-white/60 bg-white/80 backdrop-blur-xl">
-      <div class="shell flex flex-col gap-3 px-4 py-3 sm:px-6 lg:px-8 xl:flex-row xl:items-center xl:justify-between">
-        <a href="index.html" class="flex items-center gap-3">
+    <header class="site-header">
+      <div class="header-inner shell">
+        <a href="index.html" class="site-brand flex items-center gap-3">
           <div class="brand-mark small overflow-hidden">${logoMark()}</div>
           <div>
             <div class="brand-title text-xs font-semibold uppercase tracking-[0.24em]">${SITE.clinic}</div>
@@ -328,11 +433,9 @@ function header(page) {
             <div class="text-xs font-semibold text-slate-500">${SITE.title}</div>
           </div>
         </a>
-        <nav class="flex flex-wrap items-center gap-1">${nav(page)}</nav>
-        <div class="hidden items-center gap-3 xl:flex">
-          <a class="btn btn-secondary px-4 py-2 text-sm font-semibold" href="${telHref(SITE.phone)}">Call Now</a>
-          <a class="btn btn-primary px-4 py-2 text-sm font-semibold" href="appointment.html">Book Appointment</a>
-        </div>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"><span class="menu-icon" aria-hidden="true">☰</span> <span>Menu</span></button>
+        <nav id="site-navigation" aria-label="Main navigation" class="site-navigation flex flex-wrap items-center gap-1">${nav(page)}</nav>
+        <div class="header-actions"><a class="header-call" href="${telHref(SITE.phone)}">${icon('call')} Call Now</a><a class="header-book" href="appointment.html">Book Appointment</a></div>
       </div>
     </header>
   `;
@@ -340,7 +443,7 @@ function header(page) {
 
 function footer() {
   return `
-    <footer class="footer bg-[#0b2342] text-white">
+    <footer class="footer">
       <div class="shell grid gap-12 px-4 py-14 sm:px-6 lg:grid-cols-[1.3fr_0.85fr_0.85fr] lg:px-8">
         <div>
           <div class="mb-5 flex items-center gap-3">
@@ -370,6 +473,7 @@ function footer() {
           <div class="mt-4 grid gap-3 text-sm">
             <a href="about.html" class="hover:text-white">About Doctor</a>
             <a href="specialities.html" class="hover:text-white">Specialities</a>
+            <a href="blogs.html" class="hover:text-white">Blogs</a>
             <a href="reviews.html" class="hover:text-white">Patient Reviews</a>
             <a href="gallery.html" class="hover:text-white">Media & Gallery</a>
             <a href="appointment.html" class="hover:text-white">Book Appointment</a>
@@ -385,7 +489,7 @@ function footer() {
 
 function floatingWa() {
   return `
-    <a href="${whatsappUrl}" class="floating-wa hidden md:grid" target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp">
+    <a href="${whatsappUrl}" class="floating-wa" target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp">
       ${icon('whatsapp')}
     </a>
   `;
@@ -393,7 +497,7 @@ function floatingWa() {
 
 function mobileBar() {
   return `
-    <div class="mobile-bar md:hidden" aria-label="Quick actions">
+    <div class="mobile-bar" aria-label="Quick actions">
       <a class="call" href="${telHref(SITE.phone)}">Call Now</a>
       <a class="wa" href="${whatsappUrl}" target="_blank" rel="noreferrer">WhatsApp</a>
       <a class="book" href="appointment.html">Book Appointment</a>
@@ -511,11 +615,11 @@ function aboutPreview() {
             <div class="flex items-start gap-4">
               <div class="icon-box">${icon('joint')}</div>
               <div>
-                <h3 class="text-xl font-semibold text-slate-900">Doctor photo</h3>
+                <h3 class="text-xl font-semibold text-slate-900">Care through clear explanations</h3>
                 <div class="badge-soft mt-2">${SITE.doctor}</div>
               </div>
             </div>
-            <p class="mt-4">A clear doctor profile area introduces the orthopaedic specialist behind Atharva Ortho Care.</p>
+            <p class="mt-4">Understanding your condition is the first step. Dr. Ajeya Deshpande uses joint models to explain anatomy and discuss treatment.</p>
             ${doctorPhotoSlider('preview-doctor-slider mt-4')}
           </article>
           <article class="card qualification-card">
@@ -863,8 +967,9 @@ function galleryPage() {
         ${boneOrnament()}
         <div class="max-w-3xl">
           <span class="kicker">Media & Gallery</span>
-          <h1 class="title page mt-3">Inside Atharva Ortho Care: clinic, consultation room, surgery, and awards.</h1>
+          <h1 class="title page mt-3">A closer look at our doctor, clinic, and achievements.</h1>
           <p class="mt-5 text-base leading-8 text-slate-600">Explore moments that reflect our commitment to quality care, advanced treatment, and patient well-being.</p>
+          <nav class="collection-links" aria-label="Gallery collections">${MEDIA_COLLECTIONS.map(group => `<a class="btn btn-secondary" href="#${group.id}">${group.title}</a>`).join('')}</nav>
         </div>
         <div class="gallery-grid grid-3 mt-8">
           ${SITE.gallery.map((item, index) => `
@@ -885,7 +990,164 @@ function galleryPage() {
         </div>
       </div>
     </section>
+    ${recognitionGallery()}
   `;
+}
+
+
+function blogCard(blog, index) {
+  return `
+    <article class="blog-card reveal-on-scroll" style="--blog-index:${index}">
+      <a href="blogs.html#${blog.slug}" class="blog-card-image-link" aria-label="Read ${blog.title}">
+        <div class="blog-card-image-wrap">
+          <img src="${blog.image}" alt="${blog.title}" class="blog-card-image" loading="lazy">
+          <span class="blog-card-category">${blog.category}</span>
+          <span class="blog-card-arrow" aria-hidden="true">↗</span>
+        </div>
+      </a>
+      <div class="blog-card-body">
+        <div class="blog-card-meta"><span>${blog.date}</span><span>•</span><span>${blog.readTime}</span></div>
+        <h2 class="blog-card-title"><a href="blogs.html#${blog.slug}">${blog.title}</a></h2>
+        <p class="blog-card-excerpt">${blog.excerpt}</p>
+        <a class="blog-read-link" href="blogs.html#${blog.slug}">Read the article <span>→</span></a>
+      </div>
+    </article>
+  `;
+}
+
+function blogArticle(blog, index) {
+  const sections = blog.sections.map((section, sectionIndex) => `
+    <section class="blog-section reveal-on-scroll" id="${blog.slug}-${sectionIndex}">
+      <div class="blog-section-kicker">${String(sectionIndex + 1).padStart(2, '0')}</div>
+      <div>
+        <h3>${section.heading}</h3>
+        ${(section.paragraphs || []).map(p => `<p>${p}</p>`).join('')}
+        ${section.bullets ? `<ul class="blog-list">${section.bullets.map(item => `<li>${item}</li>`).join('')}</ul>` : ''}
+      </div>
+    </section>
+  `).join('');
+
+  return `
+    <article class="blog-article card reveal-on-scroll" id="${blog.slug}">
+      <div class="blog-article-progress" aria-hidden="true"><span></span></div>
+      <div class="blog-article-hero">
+        <div class="blog-article-copy">
+          <div class="blog-card-meta"><span class="blog-category-pill">${blog.category}</span><span>${blog.date}</span><span>•</span><span>${blog.readTime}</span></div>
+          <h2 class="blog-article-title">${blog.title}</h2>
+          <p class="blog-byline">By <strong>${SITE.doctor}</strong> <span>•</span> ${SITE.title}</p>
+          <p class="blog-lede">${blog.introduction}</p>
+        </div>
+        <div class="blog-article-visual">
+          <div class="blog-image-halo"></div>
+          <img src="${blog.image}" alt="Medical illustration for ${blog.title}" loading="lazy">
+          <span class="blog-image-label">Atharva Ortho Care</span>
+        </div>
+      </div>
+      <div class="blog-article-layout">
+        <aside class="blog-outline">
+          <div class="blog-outline-title">In this article</div>
+          <a href="#${blog.slug}-0">Overview</a>
+          ${blog.sections.slice(1).map((section, i) => `<a href="#${blog.slug}-${i + 1}">${section.heading}</a>`).join('')}
+          <a href="#${blog.slug}-takeaways">Key takeaways</a>
+        </aside>
+        <div class="blog-article-content">
+          ${sections}
+          <section class="blog-takeaways reveal-on-scroll" id="${blog.slug}-takeaways">
+            <div class="blog-takeaways-icon">✦</div>
+            <div><div class="blog-section-kicker">Key takeaways</div><h3>What to remember</h3><ul>${blog.takeaways.map(item => `<li>${item}</li>`).join('')}</ul></div>
+          </section>
+          <div class="blog-source-note">
+            <span>Article by ${SITE.doctor}</span>
+            <a href="${blog.source}" target="_blank" rel="noopener noreferrer">View original publication ↗</a>
+          </div>
+          <div class="blog-article-actions">
+            <a class="btn btn-primary" href="appointment.html">Book an Appointment</a>
+            <a class="btn btn-secondary" href="${whatsappUrl}" target="_blank" rel="noreferrer">WhatsApp the Clinic</a>
+          </div>
+        </div>
+      </div>
+    </article>
+  `;
+}
+
+function blogsPage() {
+  return `
+    <section class="blog-hero section">
+      <div class="shell">
+        <div class="blog-hero-inner">
+          <div class="blog-hero-copy reveal-on-scroll">
+            <span class="kicker">The Orthopaedic Journal</span>
+            <h1 class="title page mt-3">Better understanding.<br><span>Better movement.</span></h1>
+            <p class="blog-hero-lede">Clear, thoughtful orthopaedic insights from ${SITE.doctor}, written to help patients understand their joints, recognise important symptoms, and approach treatment with confidence.</p>
+            <div class="blog-hero-actions"><a class="btn btn-primary" href="#articles">Explore Articles</a><a class="btn btn-secondary" href="appointment.html">Consult the Doctor</a></div>
+          </div>
+          <div class="blog-hero-art reveal-on-scroll" aria-hidden="true">
+            <div class="blog-orbit blog-orbit-a"></div><div class="blog-orbit blog-orbit-b"></div>
+            <div class="blog-hero-bone"><span></span><span></span><span></span></div>
+            <div class="blog-floating-note blog-note-a">Movement matters</div>
+            <div class="blog-floating-note blog-note-b">Joint health • Recovery • Prevention</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section blog-feature-section" id="articles">
+      <div class="shell">
+        <div class="section-heading reveal-on-scroll"><div><span class="kicker">Featured reading</span><h2 class="title section mt-2">Orthopaedic insights for everyday life</h2></div><p>Explore practical guidance on joint health, sports injuries, and knee pain.</p></div>
+        <div class="blog-grid">${SITE.blogs.map(blogCard).join('')}</div>
+      </div>
+    </section>
+
+    <section class="section blog-reading-section">
+      <div class="shell">
+        <div class="blog-reading-heading reveal-on-scroll"><span class="kicker">From the doctor's desk</span><h2 class="title section mt-2">Read, understand, and take care of your movement.</h2></div>
+        <div class="blog-articles">${SITE.blogs.map(blogArticle).join('')}</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell">
+        <div class="blog-cta panel reveal-on-scroll">
+          <div><span class="kicker">Have a concern?</span><h2 class="title section mt-2">Your symptoms deserve a proper conversation.</h2><p>Online information can help you understand a problem, but a clinical assessment is what turns symptoms into a diagnosis and a personalised plan.</p></div>
+          <div class="flex flex-wrap gap-3"><a class="btn btn-primary" href="appointment.html">Book Appointment</a><a class="btn btn-secondary" href="${telHref(SITE.phone)}">Call ${SITE.phone}</a></div>
+        </div>
+      </div>
+    </section>
+  `;
+}
+
+function initBlogs() {
+  const progress = document.querySelector('.blog-article-progress span');
+  const articles = [...document.querySelectorAll('.blog-article')];
+  const revealItems = document.querySelectorAll('.reveal-on-scroll');
+
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px' });
+    revealItems.forEach(item => observer.observe(item));
+  } else {
+    revealItems.forEach(item => item.classList.add('is-visible'));
+  }
+
+  const updateProgress = () => {
+    if (!progress || !articles.length) return;
+    const article = articles.find(item => {
+      const rect = item.getBoundingClientRect();
+      return rect.top <= 120 && rect.bottom >= 120;
+    }) || articles[0];
+    const rect = article.getBoundingClientRect();
+    const total = Math.max(article.offsetHeight - window.innerHeight * 0.48, 1);
+    const current = Math.min(Math.max((120 - rect.top) / total, 0), 1);
+    progress.style.width = `${current * 100}%`;
+  };
+  window.addEventListener('scroll', updateProgress, { passive: true });
+  updateProgress();
 }
 
 function contactPage() {
@@ -974,6 +1236,7 @@ function render() {
     home: `${hero()}${aboutPreview()}${whyChoose()}${servicePreview()}${locationSection()}${reviewsPreview()}${appointmentCta()}${homeContactPreview()}`,
     about: `${aboutPage()}${whyChoose()}${locationSection()}`,
     specialities: `${specialityPage()}`,
+    blogs: `${blogsPage()}`,
     reviews: `${reviewPage()}`,
     gallery: `${galleryPage()}`,
     contact: `${contactPage()}`,
@@ -996,8 +1259,12 @@ function render() {
     node.textContent = String(new Date().getFullYear());
   });
 
+  initNavigation();
+  initDoctorSlides();
+  if (page === 'gallery') initPhotoViewer();
   if (shouldShowLoader) initBoneLoader();
   if (page === 'appointment') initAppointmentForm();
+  if (page === 'blogs') initBlogs();
 }
 
 function initBoneLoader() {
