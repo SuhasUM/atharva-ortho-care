@@ -14,8 +14,8 @@ const SITE = {
   address: 'Atharva Ortho Care - view exact location on Google Maps',
   mapUrl: 'https://maps.app.goo.gl/6CW1XpaA9WJpDiSN6',
   timings: [
-    'Monday - Saturday: 4:00 PM - 9:00 PM',
-    'Sunday: 10:00 AM - 1:00 PM'
+    'Monday - Saturday: 5:00 PM - 9:00 PM',
+    'Sunday: 5:00 PM - 7:00 PM'
   ],
   about: {
     intro: 'Dr. Ajeya Deshpande is the Founder and CEO of Atharva Ortho Care and a consultant orthopaedic surgeon focused on high-level, integrative care for athletes and active adults across all age groups, positioned for patients searching for the best orthopaedic surgeon in Bengaluru.',
@@ -50,7 +50,8 @@ const SITE = {
     { key: 'knee-procedures', code: 'KP', title: 'Knee Procedures', image: 'service-images/knee-replacement.jpg', desc: 'From robotic knee replacement to ligament reconstruction, this pathway focuses on pain relief, alignment, stability, and confident return to movement.', details: ['Total Knee Replacement Surgery (Robotic)', 'Minimally Invasive Knee Joint Replacement', 'Unicondylar Knee Replacement', 'Revision Total Knee Replacement Surgery', 'Knee Arthroscopy', 'ACL Reconstruction', 'Meniscal Surgery', 'PCL Reconstruction Surgery', 'MCL Reconstruction', 'Removal of Loose Bodies'] },
     { key: 'hip-procedures', code: 'HP', title: 'Hip Procedures', image: 'service-images/hip-replacement.jpg', desc: 'A complete hip-care track for fractures, arthritis, complex reconstruction, labral injury, cartilage repair, and image-guided recovery planning.', details: ['Hip Fracture Surgery', 'Total Hip Replacement Surgery', 'Minimally Invasive Total Hip Replacement (Robotic)', 'Revision Hip Surgery', 'Hip Hemiarthroplasty', 'Complex Hip Reconstruction Surgery', 'Hip Arthroscopy', 'Hip Cartilage Repair', 'Hip Labral Repair', 'Ultrasound-Guided Hip Injections', 'Complex Pelvi Acetabular Surgery'] },
     { key: 'shoulder-procedures', code: 'SP', title: 'Shoulder Procedures', image: 'service-images/shoulder-conditions.jpg', desc: 'Precision shoulder care for fracture fixation, cuff repair, instability, labral tears, AC joint injury, and replacement options when needed.', details: ['Shoulder Fracture Fixation', 'Shoulder Arthroscopic Rotator Cuff Repair', 'Arthroscopic Bankart Repair', 'SLAP Repair', 'Reverse Shoulder Replacement', 'Partial Shoulder Replacement', 'Shoulder Arthroscopic AC Joint Repair'] },
-    { key: 'shoulder-fixation', code: 'SF', title: 'Shoulder Fixation', image: 'service-images/fracture-management.jpg', desc: 'Advanced fixation and stabilization support for upper-limb, spine, pelvis, hip, knee, ankle, and foot fractures with careful healing follow-up.', details: ['Clavicle fracture fixation', 'Proximal Humerus fracture fixation', 'Elbow fracture fixation', 'Forearm and wrist fracture fixation', 'Hand fracture fixation', 'Spine fracture stabilization', 'Proximal femur (trochanter and sub trochanter) fracture fixation', 'Pelvis fracture stabilization', 'Complex Distal femur and proximal tibia fracture fixation', 'Tibia and fibula fracture fixation', 'Complex Ankle fracture fixation', 'Foot fracture fixation'] }
+    { key: 'fracture-fixation', code: 'FF', title: 'Fracture Fixation', image: 'service-images/fracture-management.jpg', desc: 'Advanced fixation and stabilization support for upper-limb, spine, pelvis, hip, knee, ankle, and foot fractures with careful healing follow-up.', details: ['Clavicle fracture fixation', 'Proximal Humerus fracture fixation', 'Elbow fracture fixation', 'Forearm and wrist fracture fixation', 'Hand fracture fixation', 'Spine fracture stabilization', 'Proximal femur (trochanter and sub trochanter) fracture fixation', 'Pelvis fracture stabilization', 'Complex Distal femur and proximal tibia fracture fixation', 'Tibia and fibula fracture fixation', 'Complex Ankle fracture fixation', 'Foot fracture fixation'] },
+    { key: 'sports-specialist', code: 'SS', title: 'Sports Specialist', image: 'service-images/sports-injuries.jpg', desc: 'Orthopaedic care for athletes and active adults, with assessment of sports injuries and recovery planning tailored to movement and activity goals.', details: ['Sports injury assessment', 'Ligament and meniscus injuries', 'Shoulder instability', 'Ankle sprains and joint injuries', 'Rehabilitation and return-to-sport guidance'] }
   ],
   reviews: [
     { name: 'Priya S.', rating: '5.0', photo: 'review-avatars/reviewer-1.jpg', quote: 'The doctor explained my knee problem very clearly and gave a practical treatment plan. The clinic visit felt organized, calm, and reassuring.' },
@@ -66,9 +67,7 @@ const SITE = {
     { title: 'Trauma & Recovery Education', note: 'Clinic display focused on trauma recovery, rehabilitation, and patient education.', images: ['gallery/clinic-photo-4.jpg'] },
     
     { title: 'Atharva Clinic Experience', note: 'A combined view of reception, consultation, clinical care, and bone-focused orthopaedic work.', images: ['gallery/clinic-photo-5.jpg', 'gallery/clinic-photo-1.jpg', 'gallery/clinic-photo-2.jpg'] },
-    { title: 'Orthopaedic Awareness Video', note: 'A useful patient education video connected to bone, joint, and recovery awareness.', youtube: 'https://www.youtube.com/embed/_hGhFaFY7XA' },
-    { title: 'Clinic Video Walkthrough', note: 'A short clinic media update from the doctor and care environment.', video: 'doctor-media/doctor-video-1.mp4' },
-    { title: 'Doctor Media Update', note: 'A second patient-facing video highlight for the Atharva Ortho Care gallery.', video: 'doctor-media/doctor-video-2.mp4' }
+    { title: 'Discover Atharva Ortho Care', note: 'Get to know Atharva Ortho Care and our focus on bone, joint, and movement care.', video: 'doctor-media/atharva-orthocare.mp4' }
   ],
   blogs: [
     {
@@ -515,7 +514,7 @@ function serviceCards() {
           <div class="service-photo-bone" aria-hidden="true"></div>
         </div>
         <div class="flex items-start gap-4">
-          <div class="icon-box">${icon(item.key === 'hip-procedures' ? 'hip' : item.key === 'shoulder-procedures' ? 'shoulder' : item.key === 'shoulder-fixation' ? 'bone' : 'joint')}</div>
+          <div class="icon-box">${icon(item.key === 'hip-procedures' ? 'hip' : item.key === 'shoulder-procedures' ? 'shoulder' : item.key === 'fracture-fixation' ? 'bone' : 'joint')}</div>
           <div>
             <div class="badge-soft">Speciality</div>
             <h3 class="mt-3 text-2xl font-semibold text-slate-900">${item.title}</h3>
@@ -789,7 +788,7 @@ Find the updated clinic location, evening consultation hours, embedded map, and 
               <span class="badge">Consultation location</span>
               <h3 class="mt-3 text-2xl font-semibold text-slate-900">${SITE.clinic}</h3>
               <p class="mt-3">${addressLine()}</p>
-              <p class="mt-4 text-sm leading-7 text-slate-600"><strong>Consultation timings:</strong> Monday - Saturday, 4:00 PM - 9:00 PM | Sunday, 10:00 AM - 1:00 PM</p>
+              <p class="mt-4 text-sm leading-7 text-slate-600"><strong>Consultation timings:</strong> ${SITE.timings.join(' | ')}</p>
             </div>
             <div class="map-frame">
               <iframe title="Google Maps location for Atharva Ortho Care" loading="lazy" src="${mapEmbedUrl}" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -883,7 +882,7 @@ function specialityPage() {
                   <span class="badge-soft">${item.code}</span>
                   <h2 class="mt-3 text-2xl font-semibold text-slate-900">${item.title}</h2>
                 </div>
-                <div class="icon-box">${icon(item.key === 'hip-procedures' ? 'hip' : item.key === 'shoulder-procedures' ? 'shoulder' : item.key === 'shoulder-fixation' ? 'bone' : 'joint')}</div>
+                <div class="icon-box">${icon(item.key === 'hip-procedures' ? 'hip' : item.key === 'shoulder-procedures' ? 'shoulder' : item.key === 'fracture-fixation' ? 'bone' : 'joint')}</div>
               </div>
               <p class="procedure-desc mt-4">${item.desc}</p>
               <div class="procedure-highlights mt-5">
@@ -1173,7 +1172,7 @@ function contactPage() {
               <span class="badge">Consultation location</span>
               <h2 class="mt-3 text-3xl font-semibold text-slate-900">${SITE.clinic}</h2>
               <p class="mt-3">${addressLine()}</p>
-              <p class="mt-4 text-sm leading-7 text-slate-600"><strong>Consultation timings:</strong> Monday - Saturday, 4:00 PM - 9:00 PM | Sunday, 10:00 AM - 1:00 PM</p>
+              <p class="mt-4 text-sm leading-7 text-slate-600"><strong>Consultation timings:</strong> ${SITE.timings.join(' | ')}</p>
             </div>
             <div class="map-frame"><iframe title="Google Maps location for Atharva Ortho Care" loading="lazy" src="${mapEmbedUrl}" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
           </article>
@@ -1211,7 +1210,7 @@ function appointmentForm() {
               <label class="field"><span class="label">Email Address</span><input name="emailAddress" type="email" required placeholder="Enter email address"></label>
               <div class="grid gap-5 sm:grid-cols-2">
                 <label class="field"><span class="label">Preferred Date</span><input name="preferredDate" type="date" required></label>
-                <label class="field"><span class="label">Preferred Time Range</span><select name="preferredTimeRange" required><option value="">Select time range</option><option value="4:00 PM - 5:00 PM">4:00 PM - 5:00 PM</option><option value="5:00 PM - 6:00 PM">5:00 PM - 6:00 PM</option><option value="6:00 PM - 7:00 PM">6:00 PM - 7:00 PM</option><option value="7:00 PM - 8:00 PM">7:00 PM - 8:00 PM</option><option value="8:00 PM - 9:00 PM">8:00 PM - 9:00 PM</option><option value="10:00 AM - 11:00 AM">Sunday: 10:00 AM - 11:00 AM</option><option value="11:00 AM - 12:00 PM">Sunday: 11:00 AM - 12:00 PM</option><option value="12:00 PM - 1:00 PM">Sunday: 12:00 PM - 1:00 PM</option></select></label>
+                <label class="field"><span class="label">Preferred Time Range</span><select name="preferredTimeRange" required><option value="">Select time range</option><option value="5:00 PM - 6:00 PM">5:00 PM - 6:00 PM</option><option value="6:00 PM - 7:00 PM">6:00 PM - 7:00 PM</option><option value="7:00 PM - 8:00 PM">7:00 PM - 8:00 PM</option><option value="8:00 PM - 9:00 PM">8:00 PM - 9:00 PM</option></select></label>
               </div>
               <label class="field"><span class="label">Complaints</span><textarea name="complaints" required placeholder="Briefly describe symptoms, pain area, or request"></textarea></label>
               <div id="form-error" class="error" aria-live="polite"></div>
@@ -1303,7 +1302,7 @@ function homeContactPreview() {
               <span class="badge">Consultation location</span>
               <h3 class="mt-3 text-2xl font-semibold text-slate-900">${SITE.clinic}</h3>
               <p class="mt-3">${addressLine()}</p>
-              <p class="mt-4 text-sm leading-7 text-slate-600"><strong>Consultation timings:</strong> Monday - Saturday, 4:00 PM - 9:00 PM | Sunday, 10:00 AM - 1:00 PM</p>
+              <p class="mt-4 text-sm leading-7 text-slate-600"><strong>Consultation timings:</strong> ${SITE.timings.join(' | ')}</p>
             </div>
             <div class="map-frame">
               <iframe title="Google Maps location for Atharva Ortho Care" loading="lazy" src="${mapEmbedUrl}" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -1332,6 +1331,16 @@ function initAppointmentForm() {
   };
   const todayIso = localDateIso(today);
   if (dateInput) dateInput.min = todayIso;
+  const timeInput = form.querySelector('[name="preferredTimeRange"]');
+  const updateTimeRanges = () => {
+    const sunday = dateInput.value && new Date(`${dateInput.value}T00:00:00`).getDay() === 0;
+    const previous = timeInput.value;
+    const slots = sunday ? ['5:00 PM - 6:00 PM', '6:00 PM - 7:00 PM'] : ['5:00 PM - 6:00 PM', '6:00 PM - 7:00 PM', '7:00 PM - 8:00 PM', '8:00 PM - 9:00 PM'];
+    timeInput.innerHTML = '<option value="">Select time range</option>' + slots.map(slot => `<option value="${slot}">${slot}</option>`).join('');
+    timeInput.value = slots.includes(previous) ? previous : '';
+  };
+  dateInput.addEventListener('change', updateTimeRanges);
+  updateTimeRanges();
 
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
@@ -1390,6 +1399,7 @@ function initAppointmentForm() {
       if (!response.ok) throw new Error('Email service failed');
       success.textContent = 'Thank you for contacting Dr. Ajeya Deshpande. Your appointment request has been sent to the clinic email. Our team will contact you shortly to confirm your appointment.';
       form.reset();
+      updateTimeRanges();
       if (dateInput) dateInput.min = todayIso;
     } catch (submitError) {
       success.textContent = 'Your email app will open with the appointment request. Please press Send to complete it.';
@@ -1401,3 +1411,6 @@ function initAppointmentForm() {
 }
 
 window.addEventListener('DOMContentLoaded', render);
+
+
+
